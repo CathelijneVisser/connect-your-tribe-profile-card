@@ -1,8 +1,41 @@
 <%- include('./partials/head') %>
 
-<article>
-  <h1>Hallo wereld!</h1>
-  <p>Alles werk! Laat dit visitekaartje in je browser aan een docent zien :D</p>
-</article>
+  <body>
 
-<%- include('./partials/foot') %>
+    <div class="card">
+      <article class="front">
+        <header>
+          <h1>Cathelijne Visser</h1>
+          <button>
+            <div class="icon">
+              <i class="uil uil-angle-right-b"></i>
+              <i class="uil uil-angle-left-b"></i>
+            </div>
+          </button>
+        </header>
+        <img src="Cathelijne.jpg" alt="Creative coder">
+      </article>
+
+
+      <article class="werk">
+        <header>
+          <h1>Werk ervaring</h1>
+        </header>
+        <p>Ik heb een havo diploma. Ik werk bij het kruidvat.<br><br> Ik heb een klein beetje ervaring met programeren,
+          ik
+          heb een heel klein beetje gewerkt met: HTML, CSS, C++ en SQL. </p>
+      </article>
+
+
+      <article class="persoonlijk">
+        <header>
+          <h1>Wie ben ik</h1>
+        </header>
+        <p>Ik ben Cathelijne Visser. Ik ben 18 jaar, en ik kom uit Nieuw-Vennep. Ik hou van tekenen en duiken.
+        </p>
+
+      </article>
+
+    </div>
+
+    <%- include('./partials/foot') %>
