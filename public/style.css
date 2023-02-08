@@ -19,7 +19,6 @@
   .card{
     position: relative;
     transform: translateX(-110%)
-    
   }
   
   article {
@@ -158,10 +157,7 @@
   
   /* expand content */
   
-  body.expand article.werk {
-    transform: translateX(  110%)
-  }
-  
+
   body.expand article.persoonlijk {
     transform: translateX(220%)
   }
@@ -191,4 +187,11 @@
   100% {
     background-position: 100% 100%;
   }
+}
+
+@media  (max-width: 40em) {
+    .card {
+      display: flex;
+      flex-direction: column;
+    }
 }

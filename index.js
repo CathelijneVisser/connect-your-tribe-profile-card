@@ -1,5 +1,18 @@
 // Importeer express uit de node_modules map
-import express from 'express'
+import express, { response } from 'express'
+
+const url = 'https://whois.fdnd.nl/api/v1/member/cathelijne-visser'
+
+let data
+
+try { 
+  data = await fetch(url)
+        .then((response) => response.json())
+        .catch(error => console.log(error))
+} catch(error) {
+  console.log(error)
+}
+
 
 // Maak een nieuwe express app aan
 const app = express()
@@ -14,11 +27,11 @@ app.use(express.static('public'))
 // Maak een route voor de index
 app.get('/', function (req, res) {
   // res.send('Hello World!')
-  res.render('index')
+  res.render('index', data)
 })
 
 // Stel het poortnummer in waar express op gaat luisteren
-app.set('port', process.env.PORT || 8000)
+app.set('port', process.env.PORT || 8800)
 
 // Start express op, haal het ingestelde poortnummer op
 app.listen(app.get('port'), function () {

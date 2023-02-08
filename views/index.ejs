@@ -5,7 +5,9 @@
     <div class="card">
       <article class="front">
         <header>
-          <h1>Cathelijne Visser</h1>
+          <h1>
+            <%= member.name %>
+          </h1>
           <button>
             <div class="icon">
               <i class="uil uil-angle-right-b"></i>
@@ -13,25 +15,14 @@
             </div>
           </button>
         </header>
-        <img src="Cathelijne.jpg" alt="Creative coder">
+        <img src="<%= member.avatar %>" alt="Avatar van <%= member.name %>">
       </article>
-
-
-      <article class="werk">
-        <header>
-          <h1>Werk ervaring</h1>
-        </header>
-        <p>Ik heb een havo diploma. Ik werk bij het kruidvat.<br><br> Ik heb een klein beetje ervaring met programeren,
-          ik
-          heb een heel klein beetje gewerkt met: HTML, CSS, C++ en SQL. </p>
-      </article>
-
 
       <article class="persoonlijk">
         <header>
           <h1>Wie ben ik</h1>
         </header>
-        <p>Ik ben Cathelijne Visser. Ik ben 18 jaar, en ik kom uit Nieuw-Vennep. Ik hou van tekenen en duiken.
+        <p>Ik ben Cathelijne Visser. Ik ben 18 jaar, en ik kom uit Nieuw-Vennep. Ik heb al een beetje ervaring met coderen.
         </p>
 
       </article>
