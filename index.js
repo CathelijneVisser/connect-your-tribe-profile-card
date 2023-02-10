@@ -12,6 +12,7 @@ try {
 } catch(error) {
   console.log(error)
 }
+console.log(data.member.bio)
 
 
 // Maak een nieuwe express app aan
@@ -26,7 +27,6 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', function (req, res) {
-  // res.send('Hello World!')
   res.render('index', data)
 })
 

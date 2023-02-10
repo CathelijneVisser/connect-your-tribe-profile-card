@@ -8,7 +8,7 @@
           <h1>
             <%= member.name %>
           </h1>
-          <button>
+          <button title="uitklappen">
             <div class="icon">
               <i class="uil uil-angle-right-b"></i>
               <i class="uil uil-angle-left-b"></i>
@@ -20,9 +20,10 @@
 
       <article class="persoonlijk">
         <header>
-          <h1>Wie ben ik</h1>
+          <h2>Wie ben ik</h2>
         </header>
-        <p>Ik ben Cathelijne Visser. Ik ben 18 jaar, en ik kom uit Nieuw-Vennep. Ik heb al een beetje ervaring met coderen.
+        <p>
+          <%= member.bio %>
         </p>
 
       </article>
